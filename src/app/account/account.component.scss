@@ -1,0 +1,51 @@
+#parent{
+    width: 100dvw;
+    height: 100vh;
+    background-color:black;
+}
+#container{
+    width: 60%;
+    height: 100%;
+    // background-image: url("../../assets/images/proton.jpg");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/776/183/742/atoms-plexus-electrons-protons-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+#display{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+#symbol {
+    color: white;
+    font-size: 44px;
+    position: relative;
+    margin-top: 160px;
+    margin-left: 140px;
+    animation: none;
+}
+#symbol::before {
+    content: "@";
+    animation: sym-modifier 4s infinite alternate both;
+}
+@keyframes sym-modifier {
+    0% { content: "!"; }
+    10%{ content: "@"; }
+    20%{ content: "#"; }
+    30%{ content: "$"; }
+    40%{ content: "%"; }
+    50%{ content: "^"; }
+    60%{ content: "&"; }
+    70%{ content: "*"; }
+    80%{ content: "?"; }
+    90%{ content: "}"; }
+    100% { content: ";"; }
+}
+#content{
+    font-size: 24px;
+    color: azure;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+

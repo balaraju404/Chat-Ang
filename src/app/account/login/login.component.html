@@ -1,0 +1,24 @@
+
+<div id="logger">
+
+    <div class="head_content">
+        <h1>welcome Back!</h1><br>
+        Don't have account?
+        <a routerLink="/account/create-account">create a account</a>
+    </div>
+    <div class="ip_box">
+        <input class="ip" type="text" placeholder="Enter the username" [(ngModel)]="username">
+        <div class="ip">
+            <input id="pw" class="sub" type="password" placeholder="Enter the password" [(ngModel)]="password">
+           <i id="icon" class="fa-solid fa-eye" (click)="viewer()"></i>
+        </div>
+        @if(msg){
+            <input class="ip err" type="text" [(ngModel)]="msgText" [disabled]="msg">
+        }
+        <button class="ip hl" (click)="verify()">login</button>
+        <a routerLink="/account/forgot-password"> Forget Password?</a>
+    </div>
+    
+ 
+
+</div>

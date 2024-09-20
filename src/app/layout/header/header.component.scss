@@ -1,0 +1,36 @@
+#min_box{
+    width: 25%;
+    height: 100%;
+    background-color: rgb(19, 18, 18);
+    float: left;
+    
+}
+#search{
+    width: 80%;
+    height: 40%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+#logo{
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: rgb(68, 66, 65);
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 4px 4px 10px green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#users{
+    display: flex;
+    flex-direction: row;
+}
+#pic{
+    width: 20%;
+    height: 100%;
+    background-color: crimson;
+    z-index: 99;
+}
